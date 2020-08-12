@@ -1,0 +1,21 @@
+{
+    "dataSlide": [
+        {
+            "title" : "WARTECH",
+            "desc"  : "Wartech Is Modern Food Ordering On The World.",
+            "icon"  : "/src/images/wartech/transparent.png"
+        }, {
+            "title" : "Easy To Order",
+            "desc"  : "Choose . Checkout . Cash-On-Delivery",
+            "icon"  : "/src/images/lightning.png"
+        }, {
+            "title" : "Cross Platform Installation",
+            "desc"  : "Mobile & Desktop",
+            "icon"  : "/src/images/cross.png"
+        }
+    ],
+    
+    "dataMenu": [
+
+    ]
+}

@@ -1,0 +1,25 @@
+@font-face{
+    font-family: "Eras Bold ITC";
+    src: url("../fonts/eras-bold.woff") format("woff");
+    src: url("../fonts/eras-bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Eras ITC";
+    src: url("../fonts/eras-medium.woff") format("woff");
+    src: url("../fonts/eras-medium.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    white-space: normal;
+    /* border: 1px solid #fff; */
+}
+
+html{
+    font-size: 10px;
+}
+
