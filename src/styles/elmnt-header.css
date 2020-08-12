@@ -1,0 +1,39 @@
+elmnt-header{
+    width: 100%;
+    height: 10rem;
+    padding: 0 4rem 0 10rem;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+elmnt-header img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+elmnt-header ul{
+    display: inline-block;
+    cursor: pointer;
+}
+
+elmnt-header ul li{
+    margin-left: 2rem;
+    list-style: none;
+    float: left;
+    font-size: 2.5rem;
+}
+
+elmnt-header ul li:nth-child(1){
+    color: #00F4B2;
+}
+
+elmnt-header ul li:hover{
+    color: #00F4B2;
+}

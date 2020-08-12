@@ -16,6 +16,46 @@
     ],
     
     "dataMenu": [
-
+        {
+            "title" : "Lontong",
+            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "icon"  : "/src/images/menu/lontong.jpg"
+        }, {
+            "title" : "Risol",
+            "desc"  : "Risol adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/risol.jpg"
+        }, {
+            "title" : "Pastel",
+            "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/pastel.jpg"
+        }, {
+            "title" : "Lontong",
+            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "icon"  : "/src/images/menu/lontong.jpg"
+        }, {
+            "title" : "Risol",
+            "desc"  : "Risol adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/risol.jpg"
+        }, {
+            "title" : "Pastel",
+            "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/pastel.jpg"
+        }, {
+            "title" : "Lontong",
+            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "icon"  : "/src/images/menu/lontong.jpg"
+        }, {
+            "title" : "Risol",
+            "desc"  : "Risol adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/risol.jpg"
+        }, {
+            "title" : "Pastel",
+            "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "icon"  : "/src/images/menu/pastel.jpg"
+        }, {
+            "title" : "Lontong",
+            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "icon"  : "/src/images/menu/lontong.jpg"
+        }
     ]
 }
