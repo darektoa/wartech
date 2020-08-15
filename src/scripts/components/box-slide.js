@@ -36,6 +36,7 @@ class BoxSlide extends HTMLElement{
     //RENDER ALL SLIDE ONE BY oNE
     renderSlide(){
         let i = 0;
+        let pause           = false;
         const dataArray     = this._data;
         const indicators    = this.querySelectorAll('ul li');
         const elmntSlide    = this.querySelector('elmnt-slide');
@@ -43,24 +44,27 @@ class BoxSlide extends HTMLElement{
 
         indicators[i].style = elmntStyle;
         elmntSlide.data = dataArray[i++];
-
-        indicators.forEach((elmnt, index)=>{
-            elmnt.addEventListener('click', ()=>{
-                i = index;
-
-                this.removeStyle(indicators);
-                indicators[i].style = elmntStyle;
-                elmntSlide.data = dataArray[i++];
-            });
-        });
         
         setInterval(()=>{
+            if(pause) return;
             if(i >= dataArray.length) i = 0;
             this.removeStyle(indicators);
 
             indicators[i].style = elmntStyle;
             elmntSlide.data  = dataArray[i++];
         }, 3000);
+
+        indicators.forEach((elmnt, index)=>{
+            elmnt.addEventListener('click', ()=>{
+                i = index;
+
+                pause = true;
+                this.removeStyle(indicators);
+                indicators[i].style = elmntStyle;
+                elmntSlide.data = dataArray[i++];
+                setTimeout(()=> pause = false, 3000);
+            });
+        });
     }
 }
 

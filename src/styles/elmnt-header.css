@@ -60,12 +60,12 @@ elmnt-header ul li:hover{
 
     elmnt-header a{
         width: 10rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     elmnt-header a img{
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     elmnt-header ul li{
