@@ -1,4 +1,4 @@
-elmnt-slide .container{
+elmnt-slide {
     width: 100%;
     height: 70rem;
     padding-left: 10rem;
@@ -10,7 +10,7 @@ elmnt-slide .container{
     align-items: center;
 }
 
-elmnt-slide .content-slider{
+elmnt-slide .text-box{
     width: 65%;
     height: 100%;
     position: relative;
@@ -21,22 +21,17 @@ elmnt-slide .content-slider{
     align-items: flex-start;
 }
 
-elmnt-slide .content-slider .text{
-    position: absolute;
-}
-
-elmnt-slide .content-slider .text h1{
+elmnt-slide .text-box h1{
     font-family: "Eras Bold ITC", sans-serif;
     font-size: 10rem;
 }
 
-elmnt-slide .content-slider .text p{
+elmnt-slide .text-box p{
     font-size: 5rem;
     font-weight: normal;
     text-align: left;
 }
 
-/*  STYLE FIGURE */
 elmnt-slide figure{
     width: 35%;
     height: 100%;
@@ -52,38 +47,29 @@ elmnt-slide figure img{
 
 /* STYLE MEDIA LEBAR 1000px*/
 @media screen and (max-width: 1000px){
-    elmnt-slide .container{
+    elmnt-slide{
         height: 50rem;
-        padding: 5rem 2rem 2rem 2rem;
+        padding: 10rem 2rem 2rem 2rem;
         flex-direction: column-reverse;
     }
 
-    elmnt-slide .content-slider{
+    elmnt-slide .text-box{
         width: 100%;
         height: 60%;
         justify-content: flex-start;
         align-items: center;
     }
 
-    elmnt-slide .content-slider h1{
+    elmnt-slide .text-box h1{
         width: 100%;
         font-size: 5rem;
         text-align: center;
     }
 
-    elmnt-slide .content-slider p{
+    elmnt-slide .text-box p{
         width: 100%;
         font-size: 2.5rem;
         text-align: center;
-    }
-
-    elmnt-slide .content-slider ul{
-        bottom: 1rem;
-    }
-
-    elmnt-slide .content-slider ul li{
-        width: 1.5rem;
-        height: 1.5rem;
     }
 
     elmnt-slide figure{
@@ -94,6 +80,27 @@ elmnt-slide figure img{
     elmnt-slide figure img{
         width: 15rem;
         height: 15rem;
+        object-fit: cover;
+    }
+}
+
+/* STYLE MEDIA LEBAR 500px */
+@media screen and (max-width: 500px){
+    elmnt-slide .text-box h1{
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    elmnt-slide .text-box p{
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    elmnt-slide figure img{
+        width: 10rem;
+        height: 10rem;
         object-fit: cover;
     }
 }

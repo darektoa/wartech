@@ -1,7 +1,7 @@
 elmnt-header{
     width: 100%;
-    height: 10rem;
-    padding: 0 4rem 0 10rem;
+    height: 8rem;
+    padding: 0 10rem;
     background-color: #000;
     color: #fff;
     position: fixed;
@@ -36,4 +36,10 @@ elmnt-header ul li:nth-child(1){
 
 elmnt-header ul li:hover{
     color: #00F4B2;
+}
+
+@media screen and (max-width: 1000px){
+    elmnt-header{
+        padding: 0 2rem;
+    }
 }

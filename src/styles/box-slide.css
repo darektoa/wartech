@@ -4,12 +4,7 @@ box-slide{
     position: relative;
     overflow: hidden;
     cursor: default;
-    white-space: nowrap;
-}
-
-box-slide > elmnt-slide{
-    width: 100%;
-    display: inline-block;
+    display: flex;
 }
 
 box-slide ul{
@@ -28,15 +23,18 @@ box-slide ul li{
     background-color: #fff;
     border-radius: 50%;
     float: left;
-} 
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1000px){
     box-slide{
         height: 50rem;
+        justify-content: center;
     }
 
     box-slide ul{
-        bottom: 1rem;
+        left: auto;
+        bottom: 3rem;
     }
 
     box-slide ul li{

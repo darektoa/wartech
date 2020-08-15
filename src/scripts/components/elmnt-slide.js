@@ -10,19 +10,15 @@ class ElmntSlide extends HTMLElement{
     }
 
     render(){
-        this.innerHTML += `
-            <div class="container">
-                <div class="content-slider">
-                    <div class="text">
-                        <h1>${this._title}</h1>
-                        <p>${this._desc}</p>
-                    </div>
-                </div>
-
-                <figure>
-                    <img src="${this._icon}" alt="Icon">
-                </figure>
+        this.innerHTML = `
+            <div class="text-box">
+                <h1>${this._title}</h1>
+                <p>${this._desc}</p>
             </div>
+
+            <figure>
+                <img src="${this._icon}" alt="Icon">
+            </figure>
         `;
     }
 }

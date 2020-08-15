@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: "Eras ITC", "Eras Light ITC", sans-serif;
     white-space: normal;
+    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #cdcdcd #f1f1f1;
     /* border: 1px solid #fff; */
