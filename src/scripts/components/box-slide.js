@@ -44,14 +44,6 @@ class BoxSlide extends HTMLElement{
         indicators[i].style = elmntStyle;
         elmntSlide.data = dataArray[i++];
 
-        setInterval(()=>{
-            if(i >= dataArray.length) i = 0;
-            this.removeStyle(indicators);
-
-            indicators[i].style = elmntStyle;
-            elmntSlide.data  = dataArray[i++];
-        }, 3000);
-
         indicators.forEach((elmnt, index)=>{
             elmnt.addEventListener('click', ()=>{
                 i = index;
@@ -61,6 +53,14 @@ class BoxSlide extends HTMLElement{
                 elmntSlide.data = dataArray[i++];
             });
         });
+        
+        setInterval(()=>{
+            if(i >= dataArray.length) i = 0;
+            this.removeStyle(indicators);
+
+            indicators[i].style = elmntStyle;
+            elmntSlide.data  = dataArray[i++];
+        }, 3000);
     }
 }
 

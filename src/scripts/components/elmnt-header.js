@@ -11,7 +11,9 @@ class ElmntHeader extends HTMLElement{
 
     render(){
         this.innerHTML = `
-            <img src="src/images/wartech/transparent.png" alt="">
+            <a href="/">
+                <img src="src/images/wartech/transparent.png" alt="Wartech">
+            </a>
                 
             <ul>
                 <li>Home</li>
