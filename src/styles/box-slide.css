@@ -1,16 +1,15 @@
 box-slide{
     width: 100%;
     height: 70rem;
-    position: relative;
     overflow: hidden;
     cursor: default;
     display: flex;
+    background-color: #000;
 }
 
 box-slide ul{
     position: absolute;
     bottom: 10rem;
-    left: 10rem;
     display: inline;
     list-style: none;
     z-index: 5;
@@ -33,7 +32,11 @@ box-slide ul li{
     }
 
     box-slide ul{
-        left: auto;
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        left: 0;
         bottom: 3rem;
     }
 

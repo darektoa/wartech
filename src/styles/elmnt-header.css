@@ -1,7 +1,6 @@
 elmnt-header{
     width: 100%;
     height: 6rem;
-    padding: 0 10rem;
     background-color: #000;
     color: #fff;
     position: absolute;
@@ -17,11 +16,12 @@ elmnt-header a{
     width: 16rem;
     height: 100%;
     display: flex;
+    float: left;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     font-size: 2.5rem;
-    font-family: "Eras ITC";
+    font-family: "Eras Bold ITC";
     text-decoration: none;
 }
 
@@ -32,7 +32,10 @@ elmnt-header a img{
 }
 
 elmnt-header ul{
-    display: inline-block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right;
 }
 
 elmnt-header ul li{
@@ -54,12 +57,11 @@ elmnt-header ul li:hover{
 @media screen and (max-width: 1000px){
     elmnt-header{
         height: 5rem;
-        padding: 0 2rem;
         top: 1.5rem;
     }
 
     elmnt-header a{
-        width: 10rem;
+        width: 11.5rem;
         font-size: 1.8rem;
     }
 

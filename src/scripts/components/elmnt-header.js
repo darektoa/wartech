@@ -14,16 +14,18 @@ class ElmntHeader extends HTMLElement{
 
     render(){
         this.innerHTML = `
-            <a href="/">
-                <img src="src/images/wartech/72x72.png" alt="Wartech">
-                Wartech
-            </a>
-                
-            <ul>
-                <li>Home</li>
-                <li>Menu</li>
-            </ul>
-        `
+            <div class="container">
+                <a href="/">
+                    <img src="src/images/wartech/72x72.png" alt="Wartech">
+                    Wartech
+                </a>
+                    
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                </ul>
+            </div>
+        `;
 
         window.addEventListener('scroll', this.onScroll);
     }

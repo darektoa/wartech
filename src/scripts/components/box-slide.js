@@ -8,8 +8,10 @@ class BoxSlide extends HTMLElement{
     // RENDER BOX-SLIDE
     render(){
         this.innerHTML = `
+        <div class="container">
             <ul></ul>
             <elmnt-slide></elmnt-slide>
+        </div>
         `;
 
         this.renderIndicators();
