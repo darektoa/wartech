@@ -5,6 +5,7 @@ box-slide{
     cursor: default;
     display: flex;
     background-color: #000;
+    transition: height .5s;
 }
 
 box-slide ul{
@@ -23,6 +24,7 @@ box-slide ul li{
     border-radius: 50%;
     float: left;
     cursor: pointer;
+    transition: background-color .5s;
 }
 
 @media screen and (max-width: 1000px){

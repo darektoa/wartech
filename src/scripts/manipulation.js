@@ -1,4 +1,4 @@
-// FUNCTION UNTUK MEMPERSINGKAT QUERY
+// FUNCTION UNTUK MEMPERSINGKAT QUERY DOCUMENT
 const $ = (query, opsi='')=>{
     if(opsi.match(/all/i))
         return document.querySelectorAll(query);
@@ -26,7 +26,7 @@ const fetchData = async ()=>{
         const dataJson      = await fetchData.json();
         const dataSource    = await Promise.all(dataJson.dataSlide);
         
-        showBoxSlide(dataJson.dataSlide);
+        showBoxSlide(dataSource);
     }catch(err){
         console.log(`Error: ${err}`);
     }
@@ -38,7 +38,6 @@ const showBoxSlide = (dataArray)=>{
     
     for(const elmnt of elmnts){
         elmnt.data = dataArray;
-        console.log(elmnt);
     }
 }
 

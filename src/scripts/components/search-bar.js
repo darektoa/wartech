@@ -4,10 +4,10 @@ class SearchBar extends HTMLElement{
     }
 
     set data(dataObject){
-        const {placeholder, textButton} = dataObject;
+        const {placeholder, onClick} = dataObject;
 
         this._placeholder   = placeholder;
-        this._textButton    = textButton;
+        this._onClick       = onClick;
 
         this.render();
     }
@@ -18,11 +18,13 @@ class SearchBar extends HTMLElement{
 
     render(){
         this.innerHTML = `
-            <div class="container">
-                <input type="text" spellcheck="false" autocomplete placeholder="${this._placeholder || 'Search Here'}">
-                <button>${this._textButton || 'Search'}</button>
-            </div>
+            <input type="text" spellcheck="false" autocomplete placeholder="${this._placeholder || 'Search Here'}">
+            <button>
+                <img src="/src/images/search-white.svg">
+            </button>
         `;
+
+        this.querySelector('input').addEventListener('input', this._onClick);
     }
 }
 

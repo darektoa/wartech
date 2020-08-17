@@ -7,6 +7,7 @@ elmnt-slide {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: height .5s;
 }
 
 elmnt-slide .text-box{
@@ -23,12 +24,14 @@ elmnt-slide .text-box{
 elmnt-slide .text-box h1{
     font-family: "Eras Bold ITC", sans-serif;
     font-size: 10rem;
+    transition: font-size .5s;
 }
 
 elmnt-slide .text-box p{
     font-size: 5rem;
     font-weight: normal;
     text-align: left;
+    transition: font-size .5s;
 }
 
 elmnt-slide figure{
@@ -75,12 +78,14 @@ elmnt-slide figure img{
         width: 100%;
         height: 50%;
         justify-content: center;
+        transition: width .5s, height .5s;
     }
     
     elmnt-slide figure img{
         width: 15rem;
         height: 15rem;
         object-fit: cover;
+        transition: width .5s, height .5s;
     }
 }
 
