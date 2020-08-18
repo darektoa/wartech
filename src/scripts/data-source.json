@@ -1,13 +1,15 @@
 {
-    "dataSlide": [
+    "status"    : 200,
+    "message"   : "OK",
+    "dataSlide" : [
         {
             "title" : "WARTECH",
             "desc"  : "Wartech Is Modern Food Ordering On The World.",
-            "icon"  : "/src/images/wartech/transparent.png"
+            "icon"  : "/src/images/wartech/transparent.svg"
         }, {
             "title" : "Easy To Order",
-            "desc"  : "Choose . Checkout . Cash-On-Delivery",
-            "icon"  : "/src/images/lightning.png"
+            "desc"  : "Choose . Checkout . Cash-On-Admin",
+            "icon"  : "/src/images/lightning.svg"
         }, {
             "title" : "Cross Platform Installation",
             "desc"  : "Mobile & Desktop",
@@ -15,47 +17,61 @@
         }
     ],
     
-    "dataMenu": [
+    "dataFoods" : [
         {
             "title" : "Lontong",
             "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "price" : 1500,
             "icon"  : "/src/images/menu/lontong.jpg"
         }, {
             "title" : "Risol",
             "desc"  : "Risol adalah makanan pendamping lontong !",
+            "price" : 2000,
             "icon"  : "/src/images/menu/risol.jpg"
         }, {
             "title" : "Pastel",
             "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "price" : 2500,
             "icon"  : "/src/images/menu/pastel.jpg"
         }, {
             "title" : "Lontong",
             "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "price" : 1500,
             "icon"  : "/src/images/menu/lontong.jpg"
         }, {
             "title" : "Risol",
             "desc"  : "Risol adalah makanan pendamping lontong !",
+            "price" : 2000,
             "icon"  : "/src/images/menu/risol.jpg"
         }, {
             "title" : "Pastel",
             "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "price" : 2500,
             "icon"  : "/src/images/menu/pastel.jpg"
         }, {
             "title" : "Lontong",
             "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
+            "price" : 1500,
             "icon"  : "/src/images/menu/lontong.jpg"
         }, {
             "title" : "Risol",
             "desc"  : "Risol adalah makanan pendamping lontong !",
+            "price" : 2000,
             "icon"  : "/src/images/menu/risol.jpg"
         }, {
             "title" : "Pastel",
             "desc"  : "Pastel adalah makanan pendamping lontong !",
+            "price" : 2500,
             "icon"  : "/src/images/menu/pastel.jpg"
-        }, {
-            "title" : "Lontong",
-            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
-            "icon"  : "/src/images/menu/lontong.jpg"
+        }
+    ],
+
+    "dataDrinks" : [
+        {
+            "title" : "Orange Juice",
+            "desc"  : "Orange Juice adalah minuman sehat oenambah vitamin C",
+            "price" : 5500,
+            "icon"  : "/src/images/menu/orange-juice.webp"
         }
     ]
 }

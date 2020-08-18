@@ -7,7 +7,7 @@ class ElmntFooter extends HTMLElement{
         this.innerHTML = `
             <div class="container">
                 <figure>
-                    <img src="/src/images/wartech/128x128.png" alt"Icon">
+                    <img src="/src/images/wartech/transparent.svg" alt"Icon">
                 </figure>
                 
                 <div class="text-box">

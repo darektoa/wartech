@@ -1,4 +1,4 @@
-class BoxSlide extends HTMLElement{
+class SlideBox extends HTMLElement{
     set data(dataArray){
         this._data = dataArray;
 
@@ -70,4 +70,4 @@ class BoxSlide extends HTMLElement{
     }
 }
 
-customElements.define('box-slide', BoxSlide);
+customElements.define('slide-box', SlideBox);

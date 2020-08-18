@@ -1,4 +1,4 @@
-box-slide{
+slide-box{
     width: 100%;
     height: 70rem;
     overflow: hidden;
@@ -8,7 +8,7 @@ box-slide{
     transition: height .5s;
 }
 
-box-slide ul{
+slide-box ul{
     position: absolute;
     bottom: 10rem;
     display: inline;
@@ -16,7 +16,7 @@ box-slide ul{
     z-index: 5;
 }
 
-box-slide ul li{
+slide-box ul li{
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
@@ -28,12 +28,12 @@ box-slide ul li{
 }
 
 @media screen and (max-width: 1000px){
-    box-slide{
+    slide-box{
         height: 50rem;
         justify-content: center;
     }
 
-    box-slide ul{
+    slide-box ul{
         width: 100%;
         padding: 0 2rem;
         display: flex;
@@ -42,7 +42,7 @@ box-slide ul li{
         bottom: 3rem;
     }
 
-    box-slide ul li{
+    slide-box ul li{
         width: 1.5rem;
         height: 1.5rem;
     }

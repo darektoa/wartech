@@ -24,20 +24,39 @@ const fetchData = async ()=>{
     try{
         const fetchData     = await fetch('/src/scripts/data-source.json');
         const dataJson      = await fetchData.json();
-        const dataSource    = await Promise.all(dataJson.dataSlide);
+        const dataSource    = await Promise.all([
+            dataJson.dataSlide,
+            dataJson.dataFoods,
+            dataJson.dataDrinks
+        ]);
         
-        showBoxSlide(dataSource);
+        console.log(dataSource);
+
+        showSlideBox(dataSource[0]);
+        showElmntHome({
+            dataFoods: dataSource[1],
+            dataDrinks: dataSource[2]
+        });
     }catch(err){
         console.log(`Error: ${err}`);
     }
 }
 
 // FUNCTION UNTUK MENAMPILKAN SLIDE
-const showBoxSlide = (dataArray)=>{
-    const elmnts = $('box-slide', 'all');
+const showSlideBox = (dataArray)=>{
+    const elmnts = $('slide-box', 'all');
     
     for(const elmnt of elmnts){
         elmnt.data = dataArray;
+    }
+}
+
+//FUNCTIOn UNTUK MENAMPILKAN CONTENT DARI HOME
+const showElmntHome = (dataObject)=>{
+    const elmntHome = $('elmnt-home', 'all');
+    
+    for(const elmnt of elmntHome){
+        elmnt.data  = dataObject;
     }
 }
 
