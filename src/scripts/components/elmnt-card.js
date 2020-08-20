@@ -28,6 +28,16 @@ class ElmntCard extends HTMLElement{
                 </div>
             </div>
         `;
+
+        this.onIconFavHover(this.querySelector('a img[src *= love-white'));
+    }
+
+    // MENAMPILKAN PERUBAHAN ICON FAVORITE SAAT MOUSE HOVER
+    onIconFavHover(iconFav){
+        iconFav.addEventListener('mouseover', ()=>{
+            iconFav.src = '/src/images/love-red.svg'
+            iconFav.onmouseout = ()=> iconFav.src = '/src/images/love-white.svg'
+        })
     }
 }
 

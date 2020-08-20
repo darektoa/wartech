@@ -69,7 +69,7 @@
     "dataDrinks" : [
         {
             "title" : "Orange Juice",
-            "desc"  : "Orange Juice adalah minuman sehat oenambah vitamin C",
+            "desc"  : "Orange Juice adalah minuman sehat penambah vitamin C",
             "price" : 5500,
             "icon"  : "/src/images/menu/orange-juice.webp"
         }, {
