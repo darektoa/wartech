@@ -1,6 +1,6 @@
-import $ from '/src/scripts/manipulation.js';
-
 let prevScrollY = 0;
+let sideMenu    = false;
+
 class ElmntHeader extends HTMLElement{
     connectedCallback(){
         this.render();
@@ -19,22 +19,36 @@ class ElmntHeader extends HTMLElement{
                     <img src="src/images/wartech/72x72.png" alt="Wartech">
                     Wartech
                 </a>
-                    
-                <ul>
-                    <li>Home</li>
-                    <li>Menu</li>
-                </ul>
+                
+                <icon-burger></icon-burger>
+
+                <div class="menu-box">
+                    <ul>
+                        <li>Home</li>
+                        <li>Menu</li>
+                    </ul>
+                </div>
             </div>
         `;
-
-        window.addEventListener('scroll', this.onScroll);
+        
+        const elmntHeader   = this;
+        const menuList      = this.querySelector('.menu-box');
+        const iconBurger    = this.querySelector('icon-burger');
+        
+        window.addEventListener('scroll', ()=> this.onScroll(elmntHeader, menuList) );
+        iconBurger.addEventListener('click', ()=> this.onIconBurgerClick(menuList) );
     }
 
     // METHODE ANIMATION ON SCROLL
-    onScroll(){
-        const elmnt     = $('elmnt-header');
+    onScroll(elmntHeader, menuList){
+        const elmnt     = elmntHeader;
         const width     = window.innerWidth;
         const scrollY   = window.pageYOffset;
+
+        if(sideMenu){
+            menuList.removeAttribute('style');
+            sideMenu = false;
+        }
 
         if((width >= 1000 && scrollY >= 700 && prevScrollY < scrollY) || (width < 1000 && scrollY >= 500 && prevScrollY < scrollY)){
             elmnt.style = `
@@ -43,7 +57,7 @@ class ElmntHeader extends HTMLElement{
             `;
         }else if(scrollY >= 10){
             elmnt.style = `
-                top: -100px;
+                top: -100vh;
                 position: fixed;
             `;
         }else{
@@ -51,6 +65,18 @@ class ElmntHeader extends HTMLElement{
         }
 
         prevScrollY = scrollY;
+    }
+
+    // METHODE MENAMPILKAN DAFTAR MENU KETIKA ICON BURGER DI CLICK
+    onIconBurgerClick(menuList){
+        if(sideMenu){
+            menuList.removeAttribute('style');
+            sideMenu = false;
+            
+        }else{
+            menuList.style = `right: 0`;
+            sideMenu = true;
+        }
     }
 }
 

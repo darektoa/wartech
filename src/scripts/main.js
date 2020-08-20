@@ -7,3 +7,4 @@ import './components/search-bar.js';
 import './components/elmnt-home.js';
 import './components/card-box.js';
 import './components/elmnt-card.js';
+import './components/icon-burger.js';

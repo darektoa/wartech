@@ -72,6 +72,11 @@
             "desc"  : "Orange Juice adalah minuman sehat oenambah vitamin C",
             "price" : 5500,
             "icon"  : "/src/images/menu/orange-juice.webp"
+        }, {
+            "title" : "Susu Sapi Segar",
+            "desc"  : "Susu sapi segar berasal dari sumber yang alami",
+            "price" : 8000,
+            "icon"  : "/src/images/menu/susu-sapi-segar.jpg"
         }
     ]
 }

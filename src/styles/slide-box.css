@@ -13,7 +13,7 @@ slide-box ul{
     bottom: 10rem;
     display: inline;
     list-style: none;
-    z-index: 5;
+    z-index: 2;
 }
 
 slide-box ul li{

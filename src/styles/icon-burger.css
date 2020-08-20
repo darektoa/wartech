@@ -1,0 +1,18 @@
+icon-burger{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+icon-burger svg{
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #00F4B2;
+}
+
+icon-burger svg line{
+    stroke: #00F4B2;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}

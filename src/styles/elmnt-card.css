@@ -2,6 +2,7 @@ elmnt-card{
     flex: 0 0 25rem;
     height: 35rem;
     margin: 0 5rem 2rem 0;
+    background-color: #fff;
     border: 1px solid #acacac;
     border-radius: 1rem;
     overflow: hidden;
@@ -67,4 +68,10 @@ elmnt-card .content .bottom .action a{
 elmnt-card .content .bottom .action a img{
     width: 80%;
     height: 80%;
+}
+
+@media screen and (max-width: 1000px){
+    elmnt-card{
+        margin: 0 2rem 2rem 0;
+    }
 }
