@@ -6,11 +6,11 @@ class CardBox extends HTMLElement{
     }
     
     render(){
-        for(const data of this._data){
+        this._data.map((data)=>{
             const elmntCard = document.createElement('elmnt-card');
             elmntCard.data  = data;
             this.appendChild(elmntCard);
-        }
+        })
     }
 }
 
