@@ -34,35 +34,25 @@
             "price" : 2500,
             "icon"  : "/src/images/menu/pastel.jpg"
         }, {
-            "title" : "Lontong",
-            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
-            "price" : 1500,
-            "icon"  : "/src/images/menu/lontong.jpg"
+            "title" : "Mie Ayam",
+            "desc"  : "Mie rebus dengan tambahan berbagai toping",
+            "price" : 12000,
+            "icon"  : "/src/images/menu/mie-ayam.jpg"
         }, {
-            "title" : "Risol",
-            "desc"  : "Risol adalah makanan pendamping lontong !",
-            "price" : 2000,
-            "icon"  : "/src/images/menu/risol.jpg"
+            "title" : "Bakso",
+            "desc"  : "Soo Baksoo",
+            "price" : 10000,
+            "icon"  : "/src/images/menu/bakso.jpg"
         }, {
-            "title" : "Pastel",
-            "desc"  : "Pastel adalah makanan pendamping lontong !",
-            "price" : 2500,
-            "icon"  : "/src/images/menu/pastel.jpg"
+            "title" : "Nasi Goreng",
+            "desc"  : "Nasi goreng spesial",
+            "price" : 15000,
+            "icon"  : "/src/images/menu/nasi-goreng.jpg"
         }, {
-            "title" : "Lontong",
-            "desc"  : "Lontong makanan pengganjal perut yg terbuat dari nasi !",
-            "price" : 1500,
-            "icon"  : "/src/images/menu/lontong.jpg"
-        }, {
-            "title" : "Risol",
-            "desc"  : "Risol adalah makanan pendamping lontong !",
-            "price" : 2000,
-            "icon"  : "/src/images/menu/risol.jpg"
-        }, {
-            "title" : "Pastel",
-            "desc"  : "Pastel adalah makanan pendamping lontong !",
-            "price" : 2500,
-            "icon"  : "/src/images/menu/pastel.jpg"
+            "title" : "Nasi Kuning",
+            "desc"  : "Nasi Warning(warna kuning)",
+            "price" : 7000,
+            "icon"  : "/src/images/menu/nasi-kuning.jpg"
         }
     ],
 
