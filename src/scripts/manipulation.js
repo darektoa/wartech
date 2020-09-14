@@ -37,6 +37,10 @@ const fetchData = async ()=>{
             dataFoods: dataSource[1],
             dataDrinks: dataSource[2]
         });
+        searchFeature({
+            dataFoods: dataSource[1],
+            dataDrinks: dataSource[2]
+        })
     }catch(err){
         console.log(`Error: ${err}`);
     }
@@ -51,13 +55,30 @@ const showSlideBox = (dataArray)=>{
     }
 }
 
-//FUNCTIOn UNTUK MENAMPILKAN CONTENT DARI HOME
+// FUNCTION UNTUK MENAMPILKAN CONTENT DARI HOME
 const showElmntHome = (dataObject)=>{
     const elmntHome = $('elmnt-home', 'all');
     
     for(const elmnt of elmntHome){
         elmnt.data  = dataObject;
     }
+}
+
+// FUNCTION SEARCH
+const searchFeature = (dataObject)=>{
+    const dataFoods = dataObject.dataFoods;
+    const dataDrinks= dataObject.dataDrinks;
+
+    $('search-bar button').addEventListener('click', ()=>{
+        const keyword = $('search-bar input').value.toLowerCase();
+        const cardBox = $('card-box', 'all');
+
+        cardBox[0].innerHTML = ''
+        cardBox[0].data = dataFoods.filter((item)=> (item.title.toLowerCase().includes(keyword)));
+        
+        cardBox[1].innerHTML = ''
+        cardBox[1].data = dataDrinks.filter((item)=> (item.title.toLowerCase().includes(keyword)));
+    })
 }
 
 fetchData();
