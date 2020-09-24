@@ -1,0 +1,77 @@
+elmnt-card{
+    flex: 0 0 25rem;
+    height: 35rem;
+    margin: 0 5rem 2rem 0;
+    background-color: #fff;
+    border: 1px solid #acacac;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+elmnt-card figure{
+    width: 100%;
+    height: 40%;
+}
+
+elmnt-card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+elmnt-card .content{
+    width: 100%;
+    height: 60%;
+    padding: 1rem;
+}
+
+elmnt-card .content h1{
+    margin-bottom: 1rem;
+    font-family: "Eras Bold ITC";
+    font-size: 1.6rem;
+}
+
+elmnt-card .content p{
+    height: 11.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+elmnt-card .content .bottom{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+elmnt-card .content .bottom h2{
+    font-family: "Eras Bold ITC";
+}
+
+elmnt-card .content .bottom .action{
+    display: inline;
+}
+
+elmnt-card .content .bottom .action a{
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-radius: .5rem;
+    background-color: #000;
+}
+
+elmnt-card .content .bottom .action a img{
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 1000px){
+    elmnt-card{
+        margin: 0 2rem 2rem 0;
+    }
+}

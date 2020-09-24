@@ -1,0 +1,95 @@
+elmnt-footer{
+    width: 100%;
+    height: 30rem;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border-top: .5rem solid #00F4B2;
+    font-size: 2rem;
+}
+
+elmnt-footer .container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+elmnt-footer figure{
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+elmnt-footer figure img{
+    width: 10rem;
+    height: 10rem;
+}
+
+elmnt-footer .text-box{
+    width: auto;
+    height: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+elmnt-footer .text-box h1{
+    margin-bottom: 3rem;
+    font-family: "ERAS BOLD ITC", "ERAS ITC";
+    font-size: 5rem;
+}
+
+elmnt-footer .text-box p{
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+elmnt-footer .text-box p a{
+    margin-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+elmnt-footer .text-box p a:hover{
+    text-decoration: underline;
+}
+
+elmnt-footer .text-box .last{
+    margin-top: 3rem;
+    color: #00F4B2;
+}
+
+@media screen and (max-width: 600px){
+    elmnt-footer{
+        height: auto;
+    }
+
+    elmnt-footer .container{
+        padding: 3rem 2rem;
+        flex-direction: column;
+    }
+
+    elmnt-footer figure{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    elmnt-footer .text-box{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    elmnt-footer .text-box h1{
+        font-size: 3rem;
+    }
+
+    elmnt-footer .text-box p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

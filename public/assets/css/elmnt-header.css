@@ -1,0 +1,128 @@
+elmnt-header{
+    width: 100%;
+    height: 6rem;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 3rem;
+    z-index: 5;
+    transition: top .5s;
+}
+
+elmnt-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+elmnt-header .container > a{
+    width: 16rem;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Eras Bold ITC";
+    text-decoration: none;
+}
+
+elmnt-header a img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+elmnt-header icon-burger{
+    display: none;
+}
+
+elmnt-header .menu-box{
+    width: 70%;
+    height: 100%;
+}
+
+elmnt-header .menu-box ul{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    float: right;
+    overflow: auto;
+    scrollbar-color: #cdcdcd black;
+}::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+elmnt-header .menu-box ul li{
+    margin-left: 2rem;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+}
+
+elmnt-header .menu-box ul li a{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+elmnt-header .menu-box ul li:nth-child(1) > a{
+    color: #00F4B2;
+}
+
+elmnt-header .menu-box ul li a:hover{
+    color: #00F4B2;
+}
+
+@media screen and (max-width: 1000px){
+    elmnt-header{
+        --height-header: 5rem;
+        height: var(--height-header);
+        top: 1.5rem;
+    }
+
+    elmnt-header a{
+        width: 11.5rem;
+        font-size: 1.8rem;
+    }
+
+    elmnt-header a img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    elmnt-header icon-burger{
+        display: inline-block;
+    }
+
+    elmnt-header .menu-box{
+        --width-menu-box: 80%;
+        width: var(width-menu-box);
+        max-width: 30rem;
+        height: calc(100vh - var(--height-header));
+        padding: 1rem 1rem 10rem 1rem;
+        position: absolute;
+        top: var(--height-header);
+        right: calc(-1 * var(--width-menu-box));
+        background-color: #000;
+        border-left: 1px solid #00F4B2;
+        transition: right .2s;
+        z-index: 100;
+    }
+
+    elmnt-header .menu-box ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    elmnt-header .menu-box ul li{
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}

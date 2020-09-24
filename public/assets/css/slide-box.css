@@ -1,0 +1,49 @@
+slide-box{
+    width: 100%;
+    height: 70rem;
+    overflow: hidden;
+    cursor: default;
+    display: flex;
+    background-color: #000;
+    transition: height .5s;
+}
+
+slide-box ul{
+    position: absolute;
+    bottom: 10rem;
+    display: inline;
+    list-style: none;
+    z-index: 2;
+}
+
+slide-box ul li{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+@media screen and (max-width: 1000px){
+    slide-box{
+        height: 50rem;
+        justify-content: center;
+    }
+
+    slide-box ul{
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        bottom: 3rem;
+    }
+
+    slide-box ul li{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

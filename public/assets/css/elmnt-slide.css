@@ -1,0 +1,111 @@
+elmnt-slide {
+    width: 100%;
+    height: 70rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: height .5s;
+}
+
+elmnt-slide .text-box{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+elmnt-slide .text-box h1{
+    font-family: "Eras Bold ITC", sans-serif;
+    font-size: 10rem;
+    transition: font-size .5s;
+}
+
+elmnt-slide .text-box p{
+    font-size: 5rem;
+    font-weight: normal;
+    text-align: left;
+    transition: font-size .5s;
+}
+
+elmnt-slide figure{
+    width: 30%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+elmnt-slide figure img{
+    width: 25rem;
+}
+
+/* STYLE MEDIA LEBAR 1000px*/
+@media screen and (max-width: 1000px){
+    elmnt-slide{
+        height: 50rem;
+        padding-top: 10rem;
+        flex-direction: column-reverse;
+    }
+
+    elmnt-slide .text-box{
+        width: 100%;
+        height: 60%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    elmnt-slide .text-box h1{
+        width: 100%;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    elmnt-slide .text-box p{
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    elmnt-slide figure{
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        transition: width .5s, height .5s;
+    }
+    
+    elmnt-slide figure img{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        transition: width .5s, height .5s;
+    }
+}
+
+/* STYLE MEDIA LEBAR 500px */
+@media screen and (max-width: 500px){
+    elmnt-slide .text-box h1{
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    elmnt-slide .text-box p{
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    elmnt-slide figure img{
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+}

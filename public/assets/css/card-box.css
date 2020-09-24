@@ -1,0 +1,10 @@
+card-box{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}::-webkit-scrollbar{
+    height: .5rem;
+}

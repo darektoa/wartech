@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "Eras Bold ITC";
+    src: url("../font/eras-bold.woff") format("woff");
+    src: url("../font/eras-bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Eras ITC";
+    src: url("../font/eras-medium.woff") format("woff");
+    src: url("../font/eras-medium.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    white-space: normal;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #cdcdcd #f1f1f1;
+    font-size: 16px;
+    /* border: 1px solid red; */
+
+}::-webkit-scrollbar{
+    width: 0.6vw;
+
+}::-webkit-scrollbar-thumb{
+    background-color: #cdcdcd;
+
+}::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    padding: 0 5rem;
+    display: inline-block;
+    position: relative;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        padding: 0 2rem;
+    }
+}

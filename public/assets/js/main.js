@@ -1,0 +1,10 @@
+import './manipulation.js';
+import './components/elmnt-slide.js';
+import './components/slide-box.js';
+import './components/elmnt-header.js';
+import './components/elmnt-footer.js';
+import './components/search-bar.js';
+import './components/elmnt-home.js';
+import './components/card-box.js';
+import './components/elmnt-card.js';
+import './components/icon-burger.js';
