@@ -98,7 +98,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content text-light bg-dark">
             <div class="modal-header" style="border-bottom: 2px solid white;">
-                <h5 class="modal-title" id="exampleModalLabel">ADD SOMETHING TO THE CART</h5>
+                <h5 class="modal-title" id="exampleModalLabel">ADD NEW FOOD</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
